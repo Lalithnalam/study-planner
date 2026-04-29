@@ -1,50 +1,44 @@
-#Study Planner (C++)
+Study Planner (C++)
+Overview
 
-This project is a console-based Study Planner developed in C++ that helps students efficiently organize and manage their study schedule based on subject importance, difficulty, and available time.
+This is a console-based Study Planner built using C++. It helps students organize their study schedule efficiently based on subject importance, difficulty, deadlines, and available time. The system generates a structured daily plan for balanced preparation.
 
-The application allows users to input subjects along with parameters such as importance (weight), deadline, required study hours, and difficulty level. Based on these inputs, the system generates an optimized day-wise study plan that distributes time effectively across all subjects.
-
-Key Features
-Add multiple subjects with relevant details
-Edit and delete subject information
+Features
+Add, edit, and delete subjects
 Mark subjects as completed
-Set total available days and daily study hours
-Automatically generate a structured study plan
-Displays a clear tabular schedule for each day
-Allocates revision time if extra hours are available
+Set total study days and daily hours
+Generate an optimized day-wise schedule
+Displays plan in a clear table format
+Automatically allocates time for revision
 Scheduling Logic
-
-The planner follows a structured approach:
-
-Ensures each subject gets minimum daily coverage
-Distributes remaining time based on priority:
-Priority = Importance / Difficulty
-Allocates time across all days evenly
-Fills unused time with revision
-
-This ensures balanced preparation while giving more focus to important and difficult subjects.
-
+Ensures minimum coverage for each subject
+Distributes remaining time using priority
+(Importance / Difficulty)
+Allocates time evenly across all days
+Uses extra time for revision
 Technologies Used
 C++
 Standard Template Library (STL)
 Console-based interface
-How to Run
+Usage
 
-Compile the program:
+Run the program, add your subjects with required details, set your available study time, and generate the plan. You can update subjects, mark them as completed, or modify the schedule anytime.
 
-g++ study_planner.cpp -o planner
-
-Run the executable:
-
-./planner
 Menu Options
-Add subjects
-Set study time
-Generate study plan
-Mark subjects as completed
-Edit subject details
-Delete subjects
-View all subjects
+Add Subjects
+Set Study Time
+Generate Plan
+Mark Completed
+Edit Subject
+Delete Subject
+Show Subjects
+Exit
 Use Case
 
-This tool is useful for students preparing for exams who want a simple and effective way to manage their study time without manually planning schedules.
+Useful for students preparing for exams who want a simple and automated way to manage their study time effectively.
+
+Future Improvements
+GUI-based interface
+Deadline-based scheduling
+Export study plan
+Reminder system
